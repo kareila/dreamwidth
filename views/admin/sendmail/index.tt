@@ -29,6 +29,10 @@
     [%- form.select( label = dw.ml( ".select.account.label" ),
                      name = "account", id = "account",
                      items = account_menu );
+    -%]&nbsp;&nbsp;&nbsp;
+    [%- form.select( label = dw.ml( ".select.form.label" ),
+                     name = "form_msg", id = "form_msg",
+                     items = form_menu );
     -%]</p><p>
 
     [%- form.textbox( label = dw.ml( ".input.sendto.label" ),

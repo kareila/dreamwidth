@@ -208,6 +208,25 @@ sub index_controller {
     $rv->{errors}        = $errors;
     $rv->{formdata}      = $r->post_args;
 
+    # FIXME: this is temporary for mockup purposes
+    $rv->{form_menu} = [ "", LJ::Lang::ml( $scope->( '.select.form.none' ) ) ];
+
+    # load any available forms for allowed accounts
+#     my %savedforms;
+#     my $acctlist = join ',', keys %{ @account_menu };  # hash, list, whatever
+#     my $dbr = LJ::get_db_reader();
+#     my $formrows = $dbr->fetchall_arrayref( "SELECT account, timecreated, " .
+#             "subject, body FROM siteadmin_email_forms " .
+#             "WHERE account IN ($acctlist) ORDER BY timecreated" );
+#     foreach ( @$formrows ) {
+#         my ( $acct, $id, $subj, $body ) = @$_;
+#         $savedforms{$acct}->{menu} ||= [];
+#         push @{ $savedforms{$acct}->{menu} }, ( $id, $subj );
+# #         $savedforms{$acct}->{$id}->{subject} = $subj;
+#         $savedforms{$acct}->{$id}->{body}    = $body;
+#     }
+#     $rv->{savedforms} = \%savedforms;
+
     return DW::Template->render_template( 'admin/sendmail/index.tt', $rv );
 }
 
@@ -304,5 +323,24 @@ sub message_controller {
 
     return DW::Template->render_template( 'admin/sendmail/message.tt', $rv );
 }
+
+# sub form_controller {
+#     my ( $ok, $rv ) = controller( privcheck => \@privs, form_auth => 1 );
+#     return $rv unless $ok;
+#
+#     my $r = DW::Request->get;
+#     my $args = $r->did_post ? $r->post_args : $r->get_args;
+#
+#    # TEMP
+#    my $formkeys = join( ', ', keys %$args );
+#    return DW::Template->render_template(
+#        'error.tt', { message => $formkeys } ) if length $formkeys;
+
+#     if ( $r->method eq 'POST' ) {
+#         my $dbh = LJ::get_db_writer();
+#    }
+#
+#     return DW::Template->render_template( 'admin/sendmail/forms.tt', $rv );
+# }
 
 1;
