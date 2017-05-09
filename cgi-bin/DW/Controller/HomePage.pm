@@ -30,8 +30,7 @@ sub index_handler {
     my ( $ok, $rv ) = controller( anonymous => 1 );
     return $rv unless $ok;
 
-#    return $rv->{remote} ? userpage( $rv ) : anonpage( $rv );
-    return anonpage( $rv );
+    return $rv->{remote} ? userpage( $rv ) : anonpage( $rv );
 }
 
 # for logged-out homepage
