@@ -19,16 +19,17 @@
 <meta name="rating" content="General">
 <meta name="ROBOTS" content="All">
 <meta name="revisit-after" Content="14 days">
+<style type='text/css'>
+    #content dl dt { font-size: 125%; font-weight: bold; font-family: monospace; }
+    #content dl dd { margin-left: 1em; margin-bottom: 1em; }
+</style>
 [% END -%]
 
 [%- sections.title=site.name -%]
 
 [%- BLOCK choice header='' about='' url='' -%]
-  <dt><a href="[% url %]"><font size="+1">
-    <tt><b>[% header %]</b></tt>
-  </font></a></dt>
-
-  <dd><font size="2">[% about %]</font></dd>
+  <dt><a href="[% url %]">[% header %]</a></dt>
+  <dd>[% about %]</dd>
 [%- END -%]
 
 [%- BLOCK choices -%]
