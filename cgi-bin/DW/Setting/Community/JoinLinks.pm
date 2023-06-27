@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityJoinLinks
+# DW::Setting::Community::JoinLinks
 #
 # DW::Setting module to choose which links should be displayed to users when they join the community
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityJoinLinks;
+package DW::Setting::Community::JoinLinks;
 use base 'LJ::Setting::BoolSetting';
 use strict;
 

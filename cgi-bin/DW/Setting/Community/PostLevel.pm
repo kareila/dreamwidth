@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityPostLevel
+# DW::Setting::Community::PostLevel
 #
 # DW::Setting module for community post level
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityPostLevel;
+package DW::Setting::Community::PostLevel;
 use base 'LJ::Setting';
 use strict;
 
@@ -49,7 +49,7 @@ sub option {
             id                        => "${key}communitypostlevel",
             selected                  => $communitypostlevel,
             class                     => "js-related-setting",
-            "data-related-setting-id" => DW::Setting::CommunityPostLevelNew->pkgkey,
+            "data-related-setting-id" => DW::Setting::Community::PostLevelNew->pkgkey,
             "data-related-setting-on" => "select",
         },
         @options

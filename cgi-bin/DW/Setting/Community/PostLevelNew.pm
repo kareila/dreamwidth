@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityPostLevelNew
+# DW::Setting::Community::PostLevelNew
 #
 # DW::Setting module for whether new members should be able to post to the community or not when they join
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityPostLevelNew;
+package DW::Setting::Community::PostLevelNew;
 use base 'LJ::Setting::BoolSetting';
 use strict;
 

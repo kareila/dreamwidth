@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityGuidelinesEntry
+# DW::Setting::Community::GuidelinesEntry
 #
 # DW::Setting module that lets you input the URL of an entry that contains the posting guidelines for the community
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityGuidelinesEntry;
+package DW::Setting::Community::GuidelinesEntry;
 use base 'LJ::Setting';
 use strict;
 

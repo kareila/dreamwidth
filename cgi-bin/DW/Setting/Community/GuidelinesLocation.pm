@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityGuidelinesLocation
+# DW::Setting::Community::GuidelinesLocation
 #
 # DW::Setting module that lets you choose the location of the posting guidelines for a community
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityGuidelinesLocation;
+package DW::Setting::Community::GuidelinesLocation;
 use base 'LJ::Setting';
 use strict;
 

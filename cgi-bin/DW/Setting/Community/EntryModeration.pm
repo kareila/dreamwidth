@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityEntryModeration
+# DW::Setting::Community::EntryModeration
 #
 # DW::Setting module for moderated entries in communities
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityEntryModeration;
+package DW::Setting::Community::EntryModeration;
 use base 'LJ::Setting::BoolSetting';
 use strict;
 

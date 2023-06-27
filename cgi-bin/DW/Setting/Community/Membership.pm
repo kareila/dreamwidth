@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::CommunityMembership
+# DW::Setting::Community::Membership
 #
 # DW::Setting module for community membership
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::CommunityMembership;
+package DW::Setting::Community::Membership;
 use base 'LJ::Setting';
 use strict;
 

@@ -207,13 +207,13 @@ body<=
             form => 1,
             desc => $ML{'.cat.community.desc'},
             settings => [qw(
-                DW::Setting::CommunityMembership
-                DW::Setting::CommunityPostLevel
-                DW::Setting::CommunityPostLevelNew
-                DW::Setting::CommunityEntryModeration
-                DW::Setting::CommunityJoinLinks
-                DW::Setting::CommunityGuidelinesLocation
-                DW::Setting::CommunityGuidelinesEntry
+                DW::Setting::Community::Membership
+                DW::Setting::Community::PostLevel
+                DW::Setting::Community::PostLevelNew
+                DW::Setting::Community::EntryModeration
+                DW::Setting::Community::JoinLinks
+                DW::Setting::Community::GuidelinesLocation
+                DW::Setting::Community::GuidelinesEntry
             )],
         }
     );
