@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsKeypress
+# DW::Setting::Shortcuts::Keypress
 #
 # Base module for keyboard shortcus
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsKeypress;
+package DW::Setting::Shortcuts::Keypress;
 use base 'LJ::Setting';
 use strict;
 use warnings;

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsTouch
+# DW::Setting::Shortcuts::Touch
 #
 # LJ::Setting module which controls whether or not to enable touch
 # Shortcuts
@@ -15,7 +15,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsTouch;
+package DW::Setting::Shortcuts::Touch;
 use base 'LJ::Setting::BoolSetting';
 use strict;
 use warnings;

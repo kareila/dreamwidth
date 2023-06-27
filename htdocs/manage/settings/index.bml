@@ -123,11 +123,11 @@ body<=
             desc => $ML{'.cat.shortcuts.desc2'},
             settings => [qw(
                 DW::Setting::Shortcuts
-                DW::Setting::ShortcutsNext
-                DW::Setting::ShortcutsPrev
-                DW::Setting::ShortcutsTouch
-                DW::Setting::ShortcutsTouchNext
-                DW::Setting::ShortcutsTouchPrev
+                DW::Setting::Shortcuts::Next
+                DW::Setting::Shortcuts::Prev
+                DW::Setting::Shortcuts::Touch
+                DW::Setting::Shortcuts::TouchNext
+                DW::Setting::Shortcuts::TouchPrev
             )],
         },
         notifications => {

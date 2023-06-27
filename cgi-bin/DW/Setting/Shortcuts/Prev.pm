@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsPrev
+# DW::Setting::Shortcuts::Prev
 #
 # LJ::Setting module which controls the keyboard shortcut for previous item
 #
@@ -14,8 +14,8 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsPrev;
-use base 'DW::Setting::ShortcutsKeypress';
+package DW::Setting::Shortcuts::Prev;
+use base 'DW::Setting::Shortcuts::Keypress';
 use strict;
 use warnings;
 

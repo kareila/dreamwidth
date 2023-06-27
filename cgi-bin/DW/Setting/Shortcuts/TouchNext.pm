@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsNext
+# DW::Setting::Shortcuts::TouchNext
 #
 # LJ::Setting module which controls the touch shortcut for next item
 #
@@ -14,8 +14,8 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsTouchNext;
-use base 'DW::Setting::ShortcutsTouchGesture';
+package DW::Setting::Shortcuts::TouchNext;
+use base 'DW::Setting::Shortcuts::TouchGesture';
 use strict;
 use warnings;
 

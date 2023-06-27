@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsPrev
+# DW::Setting::Shortcuts::TouchPrev
 #
 # LJ::Setting module which controls the touch shortcut for previous item
 #
@@ -14,8 +14,8 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsTouchPrev;
-use base 'DW::Setting::ShortcutsTouchGesture';
+package DW::Setting::Shortcuts::TouchPrev;
+use base 'DW::Setting::Shortcuts::TouchGesture';
 use strict;
 use warnings;
 

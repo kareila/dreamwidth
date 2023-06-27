@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsTouchGesture
+# DW::Setting::Shortcuts::TouchGesture
 #
 # Base module for touch gestures
 #
@@ -14,7 +14,7 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsTouchGesture;
+package DW::Setting::Shortcuts::TouchGesture;
 use base 'LJ::Setting';
 use strict;
 use warnings;

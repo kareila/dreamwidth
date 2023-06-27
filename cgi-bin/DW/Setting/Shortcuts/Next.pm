@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 #
-# DW::Setting::ShortcutsNext
+# DW::Setting::Shortcuts::Next
 #
 # LJ::Setting module which controls the keyboard shortcut for next item
 #
@@ -14,8 +14,8 @@
 # 'perldoc perlartistic' or 'perldoc perlgpl'.
 #
 
-package DW::Setting::ShortcutsNext;
-use base 'DW::Setting::ShortcutsKeypress';
+package DW::Setting::Shortcuts::Next;
+use base 'DW::Setting::Shortcuts::Keypress';
 use strict;
 use warnings;
 
