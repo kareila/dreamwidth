@@ -60,7 +60,7 @@ sub option {
         if $paidstatus && !$paidstatus->{permanent};
 
     if ( $paidstatus && $paidstatus->{expiresin} > 0 && !$paidstatus->{permanent} ) {
-        return BML::ml( 'setting.display.accounttype.status',
+        return LJ::Lang::ml( 'setting.display.accounttype.status',
             { status => $paidtype, exptime => $expiretime } );
     }
     else {
